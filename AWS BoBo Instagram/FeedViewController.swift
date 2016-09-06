@@ -127,6 +127,11 @@ class FeedViewController: UITableViewController {
                 dispatch_async(dispatch_get_main_queue(), {
                     myCell.postedImage.image = UIImage(data: data!)
                     
+                    /* @todo: Sometimes the image resizer fails to work properly.
+                     * Add some additional handling to check if the thumbnail failed
+                     * then try to pull the original image from the source bucket.
+                     */
+                    
                     if (myCell.postedImage.image != nil) {
 
                         if let imagedata = UIImagePNGRepresentation(myCell.postedImage.image!) {
