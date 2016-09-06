@@ -25,9 +25,12 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate, 
     
     func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!, withError error: NSError!) {
 
+        
         if (error == nil) {
             googleIdToken = user.authentication.idToken
             
+            /* @todo: Add an activity refresher during the Cognito signin process 
+             */
             signInToCognito(user)
             
         } else {

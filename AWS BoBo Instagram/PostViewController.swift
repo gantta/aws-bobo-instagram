@@ -20,6 +20,10 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
     
     @IBOutlet var imagePost: UIImageView!
     
+    
+    /* @todo: dismiss the keyboard when the user stops entering text
+     *        resize the view to move the text input above the pop up keyboard
+     */
     @IBOutlet var setMessage: UITextField!
     
     @IBAction func chooseAnImage(sender: AnyObject) {
