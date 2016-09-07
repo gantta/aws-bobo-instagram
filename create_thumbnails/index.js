@@ -64,7 +64,7 @@ exports.handler = function(event, context, callback) {
                 this.resize(width, height)
                     .toBuffer(imageType, function(err, buffer) {
                         if (err) {
-                            console.error('transform.resize error ' + error);
+                            //console.error('transform.resize error ' + err);
                             next(err);
                         } else {
                             next(null, response.ContentType, buffer);
