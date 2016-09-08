@@ -187,5 +187,22 @@ class UserViewController: UITableViewController {
             removeFollowing(users[indexPath.row].id)
         }
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        let nav = self.navigationController?.navigationBar
+        
+        nav?.barStyle = UIBarStyle.Default
+        //nav?.tintColor = UIColor.whiteColor()
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .ScaleAspectFit
+        
+        let image = UIImage(named: "Instagram_logo_black.png")
+        imageView.image = image
+        
+        navigationItem.titleView = imageView
+    }
+
 
 }

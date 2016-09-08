@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AWS BoBo Instagram/ViewController.swift"
-            timestampString = "494705766.557754"
+            timestampString = "495048361.962713"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "signInToCognito(_:)"
             landmarkType = "5">
          </BreakpointContent>

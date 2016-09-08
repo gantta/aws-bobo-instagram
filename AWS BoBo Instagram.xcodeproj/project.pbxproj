@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A90BDBC1D81CAF90095E486 /* Instagram_logo_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A90BDBB1D81CAF90095E486 /* Instagram_logo_black.png */; };
+		8A90BDBE1D81CE7B0095E486 /* Instagram_logo_black.psd in Resources */ = {isa = PBXBuildFile; fileRef = 8A90BDBD1D81CE7B0095E486 /* Instagram_logo_black.psd */; };
 		8AFDD2221D7A80B800710248 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFDD2211D7A80B800710248 /* AppDelegate.swift */; };
 		8AFDD2241D7A80B800710248 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFDD2231D7A80B800710248 /* ViewController.swift */; };
 		8AFDD2271D7A80B800710248 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFDD2251D7A80B800710248 /* Main.storyboard */; };
@@ -66,6 +68,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8A90BDBB1D81CAF90095E486 /* Instagram_logo_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Instagram_logo_black.png; sourceTree = "<group>"; };
+		8A90BDBD1D81CE7B0095E486 /* Instagram_logo_black.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Instagram_logo_black.psd; sourceTree = "<group>"; };
 		8AFDD21E1D7A80B800710248 /* AWS BoBo Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AWS BoBo Instagram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFDD2211D7A80B800710248 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AFDD2231D7A80B800710248 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 		8AFDD2201D7A80B800710248 /* AWS BoBo Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				8A90BDBD1D81CE7B0095E486 /* Instagram_logo_black.psd */,
+				8A90BDBB1D81CAF90095E486 /* Instagram_logo_black.png */,
 				8AFDD2741D7D25D500710248 /* placeholder.png */,
 				8AFDD2691D7C9E7600710248 /* Frameworks */,
 				8AFDD2461D7A843A00710248 /* GoogleService-Info.plist */,
@@ -269,6 +275,8 @@
 				8AFDD2471D7A843A00710248 /* GoogleService-Info.plist in Resources */,
 				8AFDD2291D7A80B800710248 /* Assets.xcassets in Resources */,
 				8AFDD2271D7A80B800710248 /* Main.storyboard in Resources */,
+				8A90BDBC1D81CAF90095E486 /* Instagram_logo_black.png in Resources */,
+				8A90BDBE1D81CE7B0095E486 /* Instagram_logo_black.psd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +472,7 @@
 				8AFDD2321D7A80B800710248 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

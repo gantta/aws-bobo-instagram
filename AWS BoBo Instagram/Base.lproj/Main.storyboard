@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,19 +19,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YLK-6M-ELx" customClass="GIDSignInButton">
-                                <rect key="frame" x="67" y="28" width="240" height="68"/>
+                                <rect key="frame" x="67" y="300" width="240" height="68"/>
                                 <color key="backgroundColor" red="0.55428685897435903" green="0.55428685897435903" blue="0.55428685897435903" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Instagram_logo_black.png" translatesAutoresizingMaskIntoConstraints="NO" id="cUM-J1-v3E">
+                                <rect key="frame" x="20" y="107" width="335" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="A very basic social app where users can share and view photos.   Built on AWS services with S3, DynamoDB, and Lambda" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsa-Sl-laE">
+                                <rect key="frame" x="20" y="480" width="335" height="141"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="xsa-Sl-laE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DZQ-9p-egY"/>
+                            <constraint firstItem="xsa-Sl-laE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Djg-74-Fyp"/>
                             <constraint firstItem="YLK-6M-ELx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="L0s-1j-cd1"/>
                             <constraint firstItem="YLK-6M-ELx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vvf-bJ-9Fi"/>
+                            <constraint firstItem="xsa-Sl-laE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bZa-A5-4DQ"/>
                             <constraint firstItem="YLK-6M-ELx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kq1-yK-HQN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xsa-Sl-laE" secondAttribute="bottom" constant="46" id="vPh-0r-e3f"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="messageLabel" destination="xsa-Sl-laE" id="ced-S3-mCE"/>
                         <segue destination="vNz-Jv-u7v" kind="show" identifier="login" id="kyT-DL-4t4"/>
                     </connections>
                 </viewController>
@@ -168,7 +184,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Sk-iG-4Mb">
                                             <rect key="frame" x="8" y="177" width="359" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -192,6 +208,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Instagram_logo_black.png" width="1500" height="425"/>
         <image name="placeholder.png" width="315" height="315"/>
     </resources>
 </document>
