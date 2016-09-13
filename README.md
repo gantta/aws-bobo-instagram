@@ -15,3 +15,12 @@ Screenshots
 -----------------
 Login
 ![](screenshot_login.png?raw=true)
+-----------------
+Feed
+![](screenshot_feed.png?raw=true)
+-----------------
+Post
+![](screenshot_post.png?raw=true)
+-----------------
+Following Users
+![](screenshot_users.png?raw=true)
